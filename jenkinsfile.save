@@ -1,0 +1,14 @@
+#!groovy 
+
+import groovy.json.JsonSlurperClassic
+
+node{
+    def SF_CONSUMER_KEY=env.3MVG9riCAn8HHkYWSmUWbpa0BtcEqbhAELI7v7CxBObIBSvHunZSy8Qc4bpY1serC0AWef5O_SftXGyrg2Gbl
+    def SF_USERNAME=env.
+    def SERVER_KEY_CREDENTALS_ID=env.SERVER_KEY_CREDENTALS_ID
+    def TEST_LEVEL='RunLocalTests'
+    def PACKAGE_NAME='0Ho1U000000CaUzSAK'
+    def PACKAGE_VERSION
+    def SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://login.salesforce.com"
+
+    def toolbelt = tool 'toolbelt'
